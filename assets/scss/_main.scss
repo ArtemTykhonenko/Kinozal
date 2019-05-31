@@ -1,4 +1,5 @@
-.new-films {
+.new-films,
+.top-week {
   .row {
     margin-right: -$gap / 2;
     margin-left: -$gap / 2;
@@ -27,8 +28,4 @@
       color: $color-light;
     }
   }
-}
-
-.top-week {
-  
 }
