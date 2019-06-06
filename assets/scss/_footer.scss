@@ -1,0 +1,46 @@
+.footer {
+    // padding-left: $gap*15;
+    // padding-right: $gap*15;
+    padding-top: $gap*3;
+    margin-top: $gap*3;
+
+    background-color: $color-dark;
+&__article p {
+    color: lighten($color-dark, 30%);
+}
+&__article h4 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: $gap;
+}
+
+&__article ul {
+    list-style: none;
+    padding: 0;
+}
+&__article a {
+    color: darken($color-gray, 40%);
+    &:hover {
+        color: lighten($color-gray, 14%);
+      }
+}
+
+&__row {
+    padding-bottom: $gap;
+    text-align: left;
+}
+
+& .container-fluid{
+    max-width: 1170px;
+}
+};
+
+
+.footer-bottom {
+    
+    & h4 {
+    color: darken($color-light, 20%);
+    font-weight: 600;
+    }
+};
