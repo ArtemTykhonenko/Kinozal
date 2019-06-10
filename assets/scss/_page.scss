@@ -1,4 +1,21 @@
-.btn {
-    float: right;
-    margin-bottom: $gap*4;
+.film-description
+{
+    &__text::before
+    {
+        content: '';
+    }
 }
+
+li
+{
+    list-style: none;
+}
+
+
+.btn
+{
+    float: right;
+
+    margin-bottom: $gap*2;
+}
+

@@ -1,96 +1,118 @@
-html {
-  overflow-y: scroll;
+html
+{
+    font-size: $font-size;
 
-  font-size: $font-size;
+    overflow-y: scroll;
 }
 
-body {
-  font-family: $font-main;
-  font-size: 1rem;
+body
+{
+    font-family: $font-main;
+    font-size: 1rem;
 }
 
-a {
-  color: $color-main;
+a
+{
+    color: $color-main;
 
-  &:hover,
-  &:focus {
-    text-decoration: none;
+    &:hover,
+    &:focus
+    {
+        text-decoration: none;
 
-    color: $color-accent;
-  }
+        color: $color-accent;
+    }
 }
 
-h1 {
-  margin: -7px 0 ($gap * 3);
-  font-family: $font-header;
-  position: relative;
-  overflow: hidden;
+h1
+{
+    font-family: $font-header;
 
-  @include xs-min {
-    font-size: 3rem;
-  }
+    position: relative;
 
-  @include xs {
-    font-size: 2rem;
-  }
+    overflow: hidden;
 
-  &::after {
-    content: "";
-    position: absolute;
-    border-bottom: 3px solid rgba(lighten($color-accent, 15%), 0.7);
-    width: 100%;
-    margin-left: 15px;
-    bottom: 8px;
-  }
+    margin: -7px 0 ($gap * 3);
+
+    @include xs-min
+    {
+        font-size: 3rem;
+    }
+    @include xs
+    {
+        font-size: 2rem;
+    }
+
+    &::after
+    {
+        position: absolute;
+        bottom: 8px;
+
+        width: 100%;
+        margin-left: 15px;
+
+        content: '';
+
+        border-bottom: 3px solid rgba(lighten($color-accent, 15%), .7);
+    }
 }
 
-h2 {
-  margin: ($gap * 4) 0 ($gap * 3) ($gap * 3);
+h2
+{
+    font-family: $font-header;
 
-  font-family: $font-header;
+    margin: ($gap * 4) 0 ($gap * 3) ($gap * 3);
 
-  @include xs-min {
-    font-size: 2.5rem;
-  }
-  @include xs {
-    font-size: 1.75rem;
-  }
+    @include xs-min
+    {
+        font-size: 2.5rem;
+    }
+    @include xs
+    {
+        font-size: 1.75rem;
+    }
 
-  &::before {
-    position: absolute;
-    left: 0;
+    &::before
+    {
+        position: absolute;
+        left: 0;
 
-    width: 30px;
-    margin: 0.25em 0 0 0;
+        width: 30px;
+        margin: .25em 0 0 0;
 
-    content: "";
+        content: '';
 
-    border-bottom: 3px solid rgba(lighten($color-accent, 15%), 0.7);
-  }
+        border-bottom: 3px solid rgba(lighten($color-accent, 15%), .7);
+    }
 
-  &::after {
-    position: absolute;
+    &::after
+    {
+        position: absolute;
 
-    width: 100%;
-    margin: 0.85em 0 0 15px;
+        width: 100%;
+        margin: .85em 0 0 15px;
 
-    content: "";
+        content: '';
 
-    border-bottom: 3px solid rgba(lighten($color-accent, 15%), 0.7);
-  }
+        border-bottom: 3px solid rgba(lighten($color-accent, 15%), .7);
+    }
 }
 
-h3 {
-  @include xs-min {
-    font-size: 1.5rem;
-  }
-  @include xs {
-    font-size: 1.25rem;
-  }
+h3
+{
+    @include xs-min
+    {
+        font-size: 1.5rem;
+    }
+    @include xs
+    {
+        font-size: 1.25rem;
+    }
 }
 
-section {
-  position: relative;
+section
+{
+    position: relative;
 
-  overflow: hidden;
+    overflow: hidden;
 }
